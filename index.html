@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <link rel="stylesheet" href="css/normalice.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer</title>
@@ -10,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
-    
+
     <!-- enlaces a los estilos -->
     <link rel="stylesheet" href="css/Styles.css">
 </head>
@@ -19,77 +20,98 @@
 
     <header>
 
-        <h1>Eva Aixa <span>Proyecto</span> </h1>
-        
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mi</a>
-            <a href="#">Trabajos</a>
-            <a href="#">Contacto</a>
+        <h1> Eva Aixa <span>Proyecto</span> </h1>
+
+        <nav class="navegacion">
+            <a class="enlace" href="#">Inicio</a>
+            <a class="enlace" href="#">Sobre mi</a>
+            <a class="enlace" href="#">Trabajos</a>
+            <a class="enlace" href="#">Contacto</a>
         </nav>
-        
-        <section>
-            <h2>Diseño y desarrollo Web</h2>
-            <img src="img/location-heart.svg" alt="Icono localización">
-            <p>Armilla, Granada</p>
-            <a href="contacto.html">Contacto</a>
-        </section>
+        <div class="banner">
+            <section class="section-banner">
+                <h2>Diseño y desarrollo Web</h2>
+                <div class="center-vertical">
+                    <img src="img/location-heart.svg" alt="Icono localización">
+                    <p> Armilla, Granada</p>
+                </div>
+                <a class="boton" href="contacto.html">Contacto</a>
+            </section>
+        </div>
+
     </header>
 
-    <main> 
-        <section>
-            <h2>Servicios</h2>
-            
+    <main>
+        <div class="container">
             <section>
-                <h3>Diseño Web</h3>
-                <img src="img/flower.svg" alt="Icono de Diseño">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit in accusantium esse eaque asperiores doloribus repudiandae voluptatibus? Iste obcaecati, fugiat enim, mollitia quibusdam doloribus natus minus deleniti odio ullam impedit.</p>
+                <h2>Servicios</h2>
+                <div class="servicio">
+
+                    <section class="servicios">
+                        <h3>Diseño Web</h3>
+                        <img src="img/flower.svg" class="iconos" alt="Icono de Diseño">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit in accusantium esse eaque
+                            asperiores doloribus repudiandae voluptatibus? Iste obcaecati, fugiat enim, mollitia
+                            quibusdam doloribus natus minus deleniti odio ullam impedit.</p>
+                    </section>
+                    <section class="servicios">
+                        <h3>Aplicaciones Web</h3>
+                        <img src="img/robot.svg" class="iconos" alt="Icono de Aplicaciones">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique non quisquam saepe?
+                            Delectus assumenda exercitationem nihil aut fugiat saepe voluptatum neque tempora tenetur?
+                            Blanditiis libero fuga temporibus mollitia, deserunt repellendus.</p>
+                    </section>
+                    <section class="servicios">
+                        <h3>Web Commerce</h3>
+                        <img src="img/shopping-bag.svg" class="iconos" alt="Icono comercial">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit architecto dolore earum
+                            natus explicabo, dolorem odit officia! Voluptas assumenda cumque omnis, ullam quas
+                            doloremque corporis repellendus dolore rem dolorum.</p>
+                    </section>
+                </div>
             </section>
-            
+            <!-- Fin servicios -->
+
             <section>
-                <h3>Aplicaciones Web</h3>
-                <img src="img/robot.svg" alt="Icono de Aplicaciones">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique non quisquam saepe? Delectus assumenda exercitationem nihil aut fugiat saepe voluptatum neque tempora tenetur? Blanditiis libero fuga temporibus mollitia, deserunt repellendus.</p>
+                <h2>Contacto</h2>
+
+                <!-- Formularios -->
+                <form class="formulario"> 
+            
+                        <fieldset>
+                            <legend>Contacta con el siguiente formulario</legend>
+                        <div class="inputs">
+                            <div class="container-input">
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Nombre">
+                            </div>
+                            <div class="container-input">
+                            <label>Teléfono</label>
+                            <input type="tel" placeholder="Teléfono">
+                            </div>                           
+                            <div class="container-input">
+                            <label>email</label>
+                            <input type="email" placeholder="email">
+                            </div>
+                            <div class="container-input">
+                            <label>Comentarios</label>
+                            <textarea></textarea>
+                            </div>
+                        </div>
+                            <a class="boton">
+                            <input type="submit" value="Enviar">
+                            </a>
+                        </fieldset>
+                </form>
+    
             </section>
-            
-            <section>
-                <h3>Web Commerce</h3>
-                <img src="img/shopping-bag.svg" alt="Icono comercial">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit architecto dolore earum natus explicabo, dolorem odit officia! Voluptas assumenda cumque omnis, ullam quas doloremque corporis repellendus dolore rem dolorum.</p>
-            </section>
-            
-        </section>
-        <!-- Fin section servicios -->
-        
-        <section>
-            <h2>Contacto</h2>
-            
-            <!-- Formularios -->
-            <form>
-                <fieldset>
-                    <legend>Contacta con el siguiente formulario</legend>
-                    
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Nombre">
-                    
-                    <label>Teléfono</label>
-                    <input type="tel" placeholder="Teléfono">
-                    
-                    <label>email</label>
-                    <input type="email" placeholder="email">
-                    
-                    <label>Comentarios</label>
-                    <textarea></textarea>
-                    
-                    <input type="submit" value="Enviar">
-                </fieldset>
-            </form>
-            
-        </section>
-        <!-- Fin section formularios -->
+            <!-- Fin section formularios -->
+        </div>
+        <!-- fin del div .container -->
     </main>
     <footer>
         <p>Todos los derechos reservados</p>
     </footer>
 </body>
+
 </html>
