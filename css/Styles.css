@@ -5,14 +5,14 @@
     --dark: #494949;
     --primary: #ddbbff98;
     --secundary: #903cfdc5;
-    --secundaryLight: #9d34f38c;
-    --primarylight: #eed0e8;
+    --secundaryLight: #8dc9fa8c;
+    --primarylight: #e9f5fd;
     --radio-borde: 0.5rem
 }
 
 /* ripo y tamaño base de la fuente */
 html {
-    font-family: "Roboto", sans-serif;
+    font-family: "arsenal", sans-serif;
     font-size: 62.5%;
     /* scroll animado */
     scroll-behavior: smooth;
@@ -31,7 +31,7 @@ header h1 {
     text-align: center;
     font-size: 4rem;
     color: var(--dark);
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 header h1 span {
