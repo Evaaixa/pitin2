@@ -11,23 +11,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
-
+    <link rel="icon shortcut" href="img/icons8-favicon-64.ico">
     <!-- enlaces a los estilos -->
     <link rel="stylesheet" href="css/Styles.css">
 </head>
 
 <body>
 
-    <header>
+    <header id="inicio">
 
         <h1> Eva Aixa <span>Proyecto</span> </h1>
 
+        <!-- barra de navegación -->
         <nav class="navegacion">
-            <a class="enlace" href="#">Inicio</a>
+            <a class="enlace" href="#inicio">Inicio</a>
             <a class="enlace" href="#">Sobre mi</a>
-            <a class="enlace" href="#">Trabajos</a>
-            <a class="enlace" href="#">Contacto</a>
+            <a class="enlace" href="#trabajos">Trabajos</a>
+            <a class="enlace" href="#contactos">Contacto</a>
         </nav>
+        <!-- fin barra de navegación -->
+        
         <div class="banner">
             <section class="section-banner">
                 <h2>Diseño y desarrollo Web</h2>
@@ -37,81 +40,95 @@
                 </div>
                 <a class="boton" href="contacto.html">Contacto</a>
             </section>
+            <!-- fin section banner -->
         </div>
 
     </header>
 
     <main>
-        <div class="container">
-            <section>
-                <h2>Servicios</h2>
-                <div class="servicio">
+        <div class="container shadow">
+            <section id="trabajos">
+            <h2>Servicios</h2>
+            <div class="contenedor-servicios">
 
-                    <section class="servicios">
-                        <h3>Diseño Web</h3>
-                        <img src="img/flower.svg" class="iconos" alt="Icono de Diseño">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit in accusantium esse eaque
-                            asperiores doloribus repudiandae voluptatibus? Iste obcaecati, fugiat enim, mollitia
-                            quibusdam doloribus natus minus deleniti odio ullam impedit.</p>
-                    </section>
-                    <section class="servicios">
-                        <h3>Aplicaciones Web</h3>
-                        <img src="img/robot.svg" class="iconos" alt="Icono de Aplicaciones">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique non quisquam saepe?
-                            Delectus assumenda exercitationem nihil aut fugiat saepe voluptatum neque tempora tenetur?
-                            Blanditiis libero fuga temporibus mollitia, deserunt repellendus.</p>
-                    </section>
-                    <section class="servicios">
-                        <h3>Web Commerce</h3>
-                        <img src="img/shopping-bag.svg" class="iconos" alt="Icono comercial">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit architecto dolore earum
-                            natus explicabo, dolorem odit officia! Voluptas assumenda cumque omnis, ullam quas
-                            doloremque corporis repellendus dolore rem dolorum.</p>
-                    </section>
-                </div>
+                <section class="contenedor-servicios">
+        
+                <section class="section-servicios shadow-small">
+                    <h3>Diseño Web</h3>
+                    <img class="iconos" src="img/flower.svg" alt="Icono de Diseño">
+                    <p>Comienza por tener claro qué es lo que haces y qué quieres lograr. 
+                        Expón esto de forma clara en el inicio de tu página web.
+                        Evita textos largos y complicados. Los visitantes deben poder
+                         entender rápidamente de qué trata tu página.</p>
+                </section>
+                
+                <section class="section-servicios shadow-small">
+                    <h3>Aplicaciones Web</h3>
+                    <img class="iconos" src="img/robot.svg" alt="Icono de Aplicaciones">
+                    <p>Las aplicaciones web más populares varían según su contexto y propósito.
+                        Las tendencias en aplicaciones web evolucionan constantemente.
+                        Estas tendencias están transformando la forma en que construimos y experimentamos 
+                        la web.</p>
+                </section>
+    
+                <section class="section-servicios shadow-small">
+                    <h3>Web Commerce</h3>
+                    <img class="iconos" src="img/shopping-bag.svg" alt="Icono comercial">
+                    <p>El comercio web se refiere a la compra y venta de bienes y servicios a través de
+                        internet.
+                        Puedes ordenar tu comercio de manera ágil. Ofrece funcionalidades como generar facturas
+                        electrónicas, controlar el stock automáticamente, llevar la cuenta corriente de tus 
+                        clientes y manejar distintas cajas.</p>
+                </section>
+                </section>
             </section>
-            <!-- Fin servicios -->
 
-            <section>
-                <h2>Contacto</h2>
+            <!-- Fin section servicios -->
 
-                <!-- Formularios -->
-                <form class="formulario"> 
-            
+                <section id="contactos">
+                    <h2>Contacto</h2>
+
+                    <!-- Formulario -->
+                    <form class="formulario"> 
                         <fieldset>
                             <legend>Contacta con el siguiente formulario</legend>
-                        <div class="inputs">
-                            <div class="container-input">
-                            <label>Nombre</label>
-                            <input type="text" placeholder="Nombre">
+                            <div class="inputs">
+                                <div class="container-input">
+                                    <label>Nombre</label>
+                                    <input type="text" placeholder="Nombre">
+                                </div>
+                
+                                <div class="container-input">
+                                    <label>Teléfono</label>
+                                    <input type="tel" placeholder="Teléfono">
+                                </div>                           
+                           
+                                <div class="container-input">
+                                    <label>email</label>
+                                    <input type="email" placeholder="email">
+                                </div>
+                            
+                                <div class="container-input">
+                                    <label>Comentarios</label>
+                                    <textarea></textarea>
+                                </div>
                             </div>
-                            <div class="container-input">
-                            <label>Teléfono</label>
-                            <input type="tel" placeholder="Teléfono">
-                            </div>                           
-                            <div class="container-input">
-                            <label>email</label>
-                            <input type="email" placeholder="email">
-                            </div>
-                            <div class="container-input">
-                            <label>Comentarios</label>
-                            <textarea></textarea>
-                            </div>
-                        </div>
-                            <a class="boton">
-                            <input type="submit" value="Enviar">
-                            </a>
+                            
+                            <input class="boton enviar" type="submit" value="enviar">      
                         </fieldset>
-                </form>
-    
-            </section>
-            <!-- Fin section formularios -->
+                    </form>
+                </section>
+                <!-- Fin section formularios -->
+            </div>
+            <!-- fin contenedor servicios -->
         </div>
-        <!-- fin del div .container -->
+        <!-- fin del div .container shadow-->
     </main>
+    
     <footer>
         <p>Todos los derechos reservados</p>
     </footer>
+
 </body>
 
 </html>
