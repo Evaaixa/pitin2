@@ -7,6 +7,7 @@
     --secundary: #903cfdc5;
     --secundaryLight: #8dc9fa8c;
     --primarylight: #e9f5fd;
+    --otrocolor: #0615f3c5;
     --radio-borde: 0.5rem
 }
 
@@ -39,11 +40,13 @@ header h1 span {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    color: var(--secundary);
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: #0615f3c5;
 }
 
 p {
@@ -181,7 +184,7 @@ contiene todo el main */
     box-shadow: 4px 4px 8px 0px rgba(194,194,194,0.7);
 }
 
-/* centra todos los textos que haya dentrode las etiquetas section */
+/* centra todos los textos que haya dentro de las etiquetas section */
 section { 
     text-align: center;
 }
